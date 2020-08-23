@@ -54,7 +54,7 @@
         <div id="social-media">
           <h3>## Mídias Sociais <span class="rotate"> >>> </span></h3>
         </div>
-        <section id="social-media-works">
+        <section style="display: none;" id="social-media-works">
           <h4>Mídia Social para Lanna Walcacer</h4>
           <div class="work-grid">
             <picture>
@@ -102,9 +102,7 @@
               </legend>
             </picture>
           </div>
-        </section>
-     
-        <h4>Mídia Social para EVB - Fortaleza</h4>
+          <h4>Mídia Social para EVB - Fortaleza</h4>
           <div class="work-grid">
             <picture>
               <img src="/assets/img/evb-story.png" />
@@ -128,21 +126,69 @@
             </picture>
           </div>
         </section>
+
         <div style="width: 100%; margin: 50px 0;"></div>
 
         <div id="branding">
           <h3>## Identidade Visual <span class="rotate"> >>> </span></h3>
         </div>
-        <section id="branding-works">
-          <div class="work-grid"></div>
+        <section id="branding-works" style="display: none;">
+          <h4>Conceição Alves</h4>
+          <div class="work-grid">
+            <picture>
+              <img src="/assets/img/conceicaoalves-logo.png" />
+              <legend>
+                Logo
+              </legend>
+            </picture>
+            <picture>
+              <img src="/assets/img/conceicaoalves-marcadagua.png" />
+              <legend>
+                Marca d'água
+              </legend>
+            </picture>
+            <picture>
+              <img src="/assets/img/conceicaoalves-cartaodevisita1.png" />
+              <legend>
+                Cartão de Visita
+              </legend>
+            </picture>
+            <picture>
+              <img src="/assets/img/conceicaoalves-cartaodevisita2.png" />
+              <legend>
+                Cartão de Visita
+              </legend>
+            </picture>
+          </div>
         </section>
       </div>
     </section>
     <section id="about">
       <h2>Sobre</h2>
+      <article class="text-about">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure
+        assumenda quidem repellat quos est corporis recusandae, nulla cumque
+        dicta praesentium asperiores eum distinctio eos perspiciatis veniam
+        dignissimos. Perspiciatis, voluptatem.
+      </article>
     </section>
-    <section id="cotact">
+    <section id="contact">
       <h2>Entre em Contato</h2>
+      <div id="contact-infos">
+        <form class="form" id="form">
+          <label to="title">Assunto:</label>
+          <input required name="title" id="title" type="text" />
+          <label>E-mail:</label>
+          <input required name="email" id="email" type="email" />
+          <label>Texto:</label>
+          <textarea required id="textarea" rows="3"></textarea>
+        </form>
+        <ul id="listcontacts">
+          <li>+55 (86) 9 8800-9482</li>
+          <li>designdovale22@gmail.com</li>
+          <li>@eye.gdesign</li>
+        </ul>
+      </div>
     </section>
   </body>
   <script src="js/main.js"></script>

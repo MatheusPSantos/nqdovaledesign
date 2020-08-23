@@ -23,3 +23,23 @@ const sourceImages = [
     legend: "story",
   },
 ];
+
+const socialmedia = document.querySelector("#social-media").firstElementChild;
+const listworks = document.getElementById("social-media-works");
+socialmedia.addEventListener("click", () => {
+  if (listworks.style.display === "none") {
+    listworks.style.display = "block";
+  } else {
+    listworks.style.display = "none";
+  }
+});
+
+const branding = document.querySelector("#branding");
+const brandlist = document.getElementById("branding-works");
+branding.addEventListener("click", () => {
+  if (brandlist.style.display == "none") {
+    brandlist.style.display = "block";
+  } else {
+    brandlist.style.display = "none";
+  }
+});

@@ -52,6 +52,11 @@ picture:hover legend {
   transition: all ease-in-out 0.3s;
 }
 
+#social-media-works + #branding-works {
+  transition: all ease-in-out 0.3s;
+  animation: appear ease-in-out 0.3s;
+}
+
 @media only screen and (max-width: 680px) {
   .navbar {
     position: fixed;
@@ -194,9 +199,20 @@ picture:hover legend {
     margin: 100px auto;
     display: flex;
     flex-direction: column;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 50px 0;
+  }
+
+  #portfolio h3 {
+    cursor: pointer;
+  }
+  #portfolio h3:hover {
+    color: rgba(165, 42, 42, 0.7);
+    border-bottom: 2px solid rgba(165, 42, 42, 0.7);
   }
 
   #portfolio h4 {
+    position: relative;
     margin-left: 50px;
     text-decoration: underline;
     margin-top: 20px;
@@ -221,5 +237,75 @@ picture:hover legend {
     width: 55vh;
     transition: all ease-in-out 0.3s;
     margin: 0 2px;
+  }
+
+  #about {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    widows: 90%;
+    position: relative;
+    margin: 50px 5%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 80vh;
+  }
+
+  .text-about {
+    text-align: left;
+    width: 70%;
+    font-size: 18pt;
+    font-weight: 200;
+  }
+
+  #contact {
+    position: relative;
+    width: 90%;
+    margin: 50px 5%;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 50px 0;
+  }
+
+  #contact-infos {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  #listcontacts {
+    width: 40%;
+    margin: 50px auto;
+    font-size: 16pt;
+    font-weight: 400;
+  }
+
+  #listcontacts li {
+    border-left: 5px solid rgba(165, 42, 42, 0.7);
+    margin: 15px 0;
+    position: relative;
+    padding-left: 10px;
+  }
+
+  #form {
+    position: relative;
+    width: 40%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #form label {
+    font-size: 20pt;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+
+  #form input {
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid;
+  }
+  #form textarea {
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    resize: none;
   }
 }
